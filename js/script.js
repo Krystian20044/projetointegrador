@@ -5,7 +5,6 @@ function cadastrarAluno() {
     // Captura dados da página
     let nome = document.getElementById("nome").value
     let dataNasc = document.getElementById("dataNasc").value
-    let CPF = document.getElementById("CPF").value
     // Cria um novo aluno a partir dos dados capturados
     let aluno = { nome: nome, dataNasc: dataNasc,CPF:CPF}
     // Adiciona aluno na lista
@@ -32,8 +31,6 @@ function mostrarAlunos() {
         <div class="card-body">
             <h5 class="card-title">${aluno.nome}</h5>
             <h6 class="card-subtitle mb-2 text-muted">${aluno.dataNasc}</h6>
-            <h6 class="card-subtitle mb-2 text-muted">${aluno.CPF}</h6>
-            
             <button class="btn btn-danger" onclick="excluirAluno(${index})"><i class="fa-regular fa-trash-alt"></i>Excluir</button>
             <button class="btn btn-warning" onclick="editarAluno(${index})"><i class="fa-regular fa-edit"></i>Editar</button>
         </div>
@@ -53,7 +50,6 @@ function editarAluno(index){
 
     document.getElementById("nome").value = aluno.nome;
     document.getElementById("dataNasc").value = aluno.dataNasc;
-    document.getElementById("CPF").value = aluno.CPF;
     
     document.getElementById("msg").innerHTML = "<p>Edite as informações e clique em, 'Cadastrar' para salvar.</p>"
     
@@ -62,5 +58,5 @@ function editarAluno(index){
 function limparCampos(){
     document.getElementById("nome").value= "";
     document.getElementById("dataNasc").value("dataNasc").value= "";
-    document.getElementById("curso").selectedIndex = 0;
+    
 }
