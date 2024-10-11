@@ -10,36 +10,46 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Cadastro de Usuário</h1>
+    <!-- <div class="container">
+        <h1>Cadastro de Usuário</h1> -->
         <!-- Nome do usuário-->
-        <input type="text" name="nome" id="nome" placeholder="Nome completo">
+        <!-- <input type="text" name="nome" id="nome" placeholder="Nome completo"> -->
         <!-- Data de nascimento do usuário-->
-        <input type="date" name="dataNasc" id="dataNasc" placeholder="Data de nascimento">
-        <!-- CPF do usuário-->
-        <!-- <input type="number" name="CPF" id="CPF" placeholder="CPF"> -->
-        <!--  aluno-->
-        <!-- <select name="curso" id="curso">
-            <option value="Programador Web">Programador Web</option>
-            <option value="Programador de Sistemas">Programador de Sistemas</option>
-            <option value="Administrador de Banco de Dados">Administrador de Banco de Dados</option>
-            <option value="Administrador de Redes">Administrador de Redes</option>
-        </select> -->
-        <!-- Botão de enviar -->
-        <button onclick="cadastrarAluno()" type="button" class="btn btn-primary">Cadastrar</button>
+        <!-- <input type="date" name="dataNasc" id="dataNasc" placeholder="Data de nascimento"> -->
+        <!-- e-mail do usuário -->
+        <!-- <input type="email" name="Email" id="Email" placeholder="E-mail"> -->
+
+        <!-- <button onclick="cadastrarAluno()" type="button" class="btn btn-primary">Cadastrar</button>
         <div id="msg"></div>
         <button onclick="mostrarAlunos()" type="button" class="btn btn-success">Visualizar</button>
         <div class="mt-3"></div>
-        <div id="card"></div>
-            
+        <div id="card"></div> -->
+
         
-        <div class="card">
-            <div class="card-details">
-            <p class="text-title"></p>
-            <p class="text-body"></p>
-            </div>
-            <button class="card-button"></button>
-        </div>
+        
+        <div class="container">
+            <div class="form_area">
+                <p class="title">Cadastro</p>
+                <form action="">
+                    <div class="form_group">
+                        <label class="sub_title" for="name">Nome</label>
+                        <input placeholder="Entre com seu nome completo" class="form_style" type="text">
+                    </div>
+                    <div class="form_group">
+                        <label class="sub_title" for="email">Email</label>
+                        <input placeholder="Entre com seu E-mail" id="email" class="form_style" type="email">
+                    </div>
+                    <div class="form_group">
+                        <label class="sub_title" for="password">Senha</label>
+                        <input placeholder="Entre com a sua senha" id="password" class="form_style" type="password">
+                    </div>
+                    <div>
+                        <button class="btn" onclick="cadastrarUsuario()">Cadastrar</button>
+                        <p>Tem uma conta? <a class="link" href="">Entre Aqui!</a></p><a class="link" href="">
+                    </a></div><a class="link" href="">
+                
+            </a></form></div><a class="link" href="">
+        </a></div>
     </div>
 </body>
 </html>
