@@ -11,3 +11,5 @@ function cadastrarUsuario() {
     }
 }
 
+function mostrarInfo() {
+    alert("Aqui estão mais informações sobre o projeto.") }
